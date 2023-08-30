@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>universities</h1>
+  
+<ul>
+  {% for x in mymembers %}
+    <li>{{ x.brandname }} {{ x.scholarships }}<a href="details/{{ x.id }}">view</a></li>
+  {% endfor %}
+</ul>
+
+</body>
+</html>

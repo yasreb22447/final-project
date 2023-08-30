@@ -1,0 +1,76 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+  
+  </head>
+
+<body>
+
+  
+  <h1 style="text-align: center; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">universities</h1>
+
+  <ul>
+    {% csrf_token %}
+      {% for x in mymembers %}
+       <a href="details/{{ x.id }}" style="--clr:hsl(234, 57%, 41%)">
+        {% endfor %}
+         <button herf="/details{{ x.id }}" style=" float: left, top; background-color: gray; padding: 2cm 3cm; border-radius: 2cm; box-sizing:border-box; margin-right: 1cm;"> 
+           
+      
+      {% for x in mymembers %}
+      <li>{{ x.Field_of_study }}</li>
+      {% endfor %}
+  </ul> 
+</a>
+  <ul style=>
+    {% csrf_token %}
+       {% for x in Canada %}
+      <a href="details2/{{ x.id }}" style="--clr:hsl(234, 57%, 41%)">
+       {% endfor %}
+        <button herf="/details2{{ x.id }}" style="  float: left top; background-color: gray; padding: 2cm 3cm; border-radius: 2cm; box-sizing:border-box; padding-right: 6cm; margin-right: 1cm; padding-left: 5.8cm; "> 
+          
+
+     
+     {% for x in Canada %}
+     <li>{{ x.Field_of_study }}</li>
+     {% endfor %}
+    </ul>
+  </a>
+
+
+
+  <ul>{% csrf_token %}
+    {% for x in Germany %}
+   <a href="details3/{{ x.id }}" style="--clr:hsl(234, 57%, 41%)">
+    {% endfor %}
+     <button herf="/details3{{ x.id }}" style="float: left, top; background-color: gray; padding: 2cm 3cm; border-radius: 2cm; box-sizing:border-box ; margin-right: 1cm; padding-left: 3.5; padding-top: 1.8; padding-bottom: 1.8cm;"> 
+       
+  
+  {% for x in Germany %}
+  <img style="border-radius: 1cm; float: left; "><li>{{ x.Field_of_study }}</li>
+  {% endfor %}
+  </ul>
+</a>
+
+    </button>
+
+  
+<ul>
+  {% for x in usa %}
+ <a href="details4/{{ x.id }}" style="--clr:hsl(234, 57%, 41%)">
+  {% endfor %}
+   <button herf="/details4{{ x.id }}" style="float: left, top; background-color: gray; padding: 2cm 3cm; border-radius: 2cm; box-sizing:border-box;"> 
+         
+    
+  {% for x in usa %}
+  <img style="border-radius: 1cm; float: left; "><li>{{ x.Field_of_study }}</li>
+  {% endfor %}
+    </ul>
+  </a>
+  
+      </button>
+
+</body>
+</html>

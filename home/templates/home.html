@@ -1,0 +1,31 @@
+{% extends "master.html"%}
+{% load static %}
+{% csrf_token %}
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+{% block content%}
+<body style="  text-align: center; background-image: url('{% static 'image/chance.jpeg' %}'); backdrop-filter: blur(10px);
+z-index: -1;height: 100%;width: 100%;left: 0;top: 0;position: fixed;background-repeat: no-repeat;background-position: center;background-size: cover;
+">
+  <h1 style="text-align: center; color: aliceblue; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"> We well give you a chance to find you futuer</h1>
+
+    
+    
+    
+   
+
+  
+    <a href="/scholarships">
+      <button href="/scholarships.html" style=" box-sizing: border-box; margin-top: 1cm; ; border-radius: 2cm; border-style: inherit; padding: 0.2cm 4cm; background-color:gray;  color: aliceblue; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">scholarships</button>
+
+  </a>
+</body>
+{% endblock %}
+</html>

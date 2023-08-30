@@ -1,0 +1,30 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function Germany(){
+                window.open("https://o4af.com/oppertunity/ma-in-development-management-in-germany/")
+            }
+        </script>
+    </head>
+
+<body style="  text-align: center; background-image: url('{% static 'image/chance.jpeg' %}'); backdrop-filter: blur(10px);
+z-index: -1;height: 100%;width: 100%;left: 0;top: 0;position: fixed;background-repeat: no-repeat;background-position: center;background-size: cover;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+
+    
+ <h1 style="color: aliceblue;">{{ Germany.location }} <br>{{ Germany.university}}</h1>
+
+<p style="color: aliceblue;">Field of study: {{ Germany.Field_of_study }}</p>
+<p style="color: aliceblue;">Degree: {{ Germany.Degree }}</p>
+<p style="color: aliceblue;">Apply Befor: {{ Germany.time }}</p>
+<p style="color: aliceblue;">Funding type: {{ Germany.funding_type }}</p>
+<p style="color: aliceblue;">Eligible Countreies: {{ Germany.Eligible_Countreies }}</p>
+    <button onclick="Germany()" style=" float: right;border-style: hidden; background-color: gray; padding: 10px 20px;margin-right: 9.2cm; border-radius: 2cm; ;"> 
+        go to link
+    </button>
+
+</body>
+</html>

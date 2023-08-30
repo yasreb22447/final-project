@@ -1,0 +1,39 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function canada(){
+                window.open("https://o4af.com/opportunity/pearson-scholarship-university-toronto-canada/")
+            }
+        </script>
+    </head>
+
+<body style="  text-align: center; background-image: url('{% static 'image/chance.jpeg' %}'); backdrop-filter: blur(10px);
+z-index: -1;height: 100%;width: 100%;left: 0;top: 0;position: fixed;background-repeat: no-repeat;background-position: center;background-size: cover;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+
+    <h1 style="color: aliceblue;">{{ Canada.location }} <br>{{ Canada.university}}</h1 style="color: aliceblue;">
+
+
+
+
+    <p style="color: aliceblue;">Field of study: {{ Canada.Field_of_study }}</p>
+    <p style="color: aliceblue;">Degree: {{ Canada.Degree }}</p>
+    <p style="color: aliceblue;">Apply Befor: {{ Canada.time }}</p>
+    <p style="color: aliceblue;">Funding type: {{ Canada.funding_type }}</p>
+    <p style="color: aliceblue;">Eligible Countreies: {{ Canada.Eligible_Countreies }}</p>
+    
+    <button onclick="canada()" style=" float: right;border-style: hidden; background-color: gray; padding: 10px 20px;margin-right: 9.2cm; border-radius: 2cm; ;"> 
+        go to link
+    </button>
+
+
+
+
+
+
+
+</body>
+</html>
